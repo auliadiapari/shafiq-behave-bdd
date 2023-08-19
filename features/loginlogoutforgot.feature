@@ -1,6 +1,5 @@
-
-
 Feature: Shafiq Login
+  
   Scenario: successfully Login with valid credentials
     Given user launch Chrome Browser
     When user open shafiq home page and go to login page
@@ -14,5 +13,5 @@ Feature: Shafiq Login
 
   Scenario: successfully Forgot Password
     Then user navigate to forgot password page
-    When user enter email "<aulia.diapari@gmail.com>" and submit
+    When user enter email "aulia.diapari@gmail.com" and submit
     Then user will notify the validation message

@@ -4,8 +4,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 import time
-
-
+  
 
 
 # You can implement step definitions for undefined steps with these snippets:
