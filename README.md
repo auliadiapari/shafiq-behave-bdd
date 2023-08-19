@@ -17,9 +17,7 @@ once the directory reports is generated, then try:
 if allure serve reports/ is not worked, try to install:
 4. npm install -g allure-commandline
 
-    then back to command no 3
-
-git 
+then back to command no 3
 
 
 Link to Test case: https://docs.google.com/spreadsheets/d/1a8J6YeBcxdiaY3FtGPgF4FZhrwtJjM5WjOzU5v2_7qk/edit?usp=sharing
