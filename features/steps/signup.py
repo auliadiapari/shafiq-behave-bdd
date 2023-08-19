@@ -35,10 +35,10 @@ def step_impl(context):
     assert signUpPageTitle.is_displayed(), 'Signup page is not displayed'
 
     # Regsiter with valid Format
-    context.driver.find_element(By.ID, Locators.SGNUP_FIELD_NAME).send_keys('test')
-    context.driver.find_element(By.ID, Locators.SGNUP_FIELD_EMAIL).send_keys('testasd@gmail.com')
-    context.driver.find_element(By.ID, Locators.SGNUP_FIELD_KATA_SANDI).send_keys('Auliard06!')
-    context.driver.find_element(By.ID, Locators.SGNUP_FIELD_KONFIRMASI_KATA_SANDI).send_keys('Auliard06!')
+    context.driver.find_element(By.ID, Locators.SGNUP_FIELD_NAME).send_keys('test') # Replace with valid name format
+    context.driver.find_element(By.ID, Locators.SGNUP_FIELD_EMAIL).send_keys('testasd@gmail.com') # Replace with valid email format
+    context.driver.find_element(By.ID, Locators.SGNUP_FIELD_KATA_SANDI).send_keys('Auliard06!') # Replace with valid password format
+    context.driver.find_element(By.ID, Locators.SGNUP_FIELD_KONFIRMASI_KATA_SANDI).send_keys('Auliard06!') # Replace with valid confirm password format
     context.driver.switch_to.frame(0)
     context.driver.find_element(By.ID, "recaptcha-anchor-label").click()
     time.sleep(10)
