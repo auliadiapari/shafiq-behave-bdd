@@ -34,6 +34,9 @@ def step_impl(context, email, password):
     context.driver.find_element(By.ID, Locators.LOGIN_FIELD_KATA_SANDI).send_keys(password)
     context.driver.switch_to.frame(0)
     context.driver.find_element(By.CSS_SELECTOR, Locators.ALL_CAPTCHA).click()
+  
+    ## Please pay attention when the test running and encountering image verifications after clicking captcha, you should complete the image puzzle/selections
+  
     time.sleep(10)
 
 
@@ -98,6 +101,9 @@ def step_impl(context):
     context.driver.find_element(By.NAME, Locators.LUPA_KATA_SANDI_FIELD_EMAIL).send_keys(email)
     context.driver.switch_to.frame(0)
     context.driver.find_element(By.CSS_SELECTOR, Locators.ALL_CAPTCHA).click()
+  
+    ## Please pay attention when the test running and encountering image verifications after clicking captcha, you should complete the image puzzle/selections
+  
     time.sleep(10)
     context.driver.switch_to.default_content()
     context.driver.find_element(By.CSS_SELECTOR, Locators.LOGIN_CLICK_BUTTON).click()
