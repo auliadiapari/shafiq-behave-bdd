@@ -2,8 +2,11 @@ To run the test and generate the report with Allure-Behave:
 
 Run the test:
 1. install the requirements.txt
-2. to run specific file:  behave fileName.feature
-3. to run all feature file: behave
+
+Please pay attention when the test running and encountering image verifications after clicking captcha, you should complete the image puzzle/selections
+   
+3. to run specific file:  behave fileName.feature
+4. to run all feature file: behave
 
 Please change the "email, password, and others data in order to testing", its tested with my credents.
        
