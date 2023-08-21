@@ -41,6 +41,9 @@ def step_impl(context):
     context.driver.find_element(By.ID, Locators.SGNUP_FIELD_KONFIRMASI_KATA_SANDI).send_keys('Auliard06!') # Replace with valid confirm password format
     context.driver.switch_to.frame(0)
     context.driver.find_element(By.ID, "recaptcha-anchor-label").click()
+
+    ## Please pay attention when the test running and encountering image verifications after clicking captcha, you should complete the image puzzle/selections
+
     time.sleep(10)
     context.driver.switch_to.default_content()
     context.driver.find_element(By.CSS_SELECTOR, Locators.SGNUP_CLICK_BUTTON).click()
